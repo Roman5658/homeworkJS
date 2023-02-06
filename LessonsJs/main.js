@@ -1,5 +1,4 @@
-// //ЗАДАНИЕ 1
-//
+//ЗАДАНИЕ 1//
 // let strText = 'hello';
 // console.log(strText)
 //
@@ -67,13 +66,12 @@
 //
 // //ЗАДАНИЕ 4
 //
-// let firstName = prompt(`enter firstName`);
-// let middleName = prompt('enter middleName');
-// let age = +prompt('enter age');
-//
-// let res = `${firstName} ${middleName} ${age}`;
-// console.log(res);
+//let firstName = prompt(`enter firstName`);
+//let middleName = prompt('enter middleName');
+//let age = +prompt('enter age');
 
+//let res = `${firstName} ${middleName} ${age}`;
+//console.log(res);
 
 // Масиви та об'єкти:
 // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
@@ -91,16 +89,16 @@ let names = [
     'Vodka'];
 
 console.log(names)
-// console.log(names[0])
-// console.log(names[1])
-// console.log(names[2])
-// console.log(names[3])
-// console.log(names[4])
-// console.log(names[5])
-// console.log(names[6])
-// console.log(names[7])
-// console.log(names[8])
-// console.log(names[9])
+//console.log(names[0];
+//console.log(names[1];
+//console.log(names[2];
+//console.log(names[3];
+//console.log(names[4];
+//console.log(names[5];
+//console.log(names[6];
+//console.log(names[7];
+//console.log(names[8];
+//console.log(names[9];
 
 
 // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
@@ -234,37 +232,162 @@ console.log(user9.password)
 
 // Логічні розгалуження:
 //     - Є змінна х, якій ви надаєте довільне числове значення.
-//     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+//     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'.
+//     Перевірте  скрипт при a, що дорівнює 1, 0, -3
 
-let x = 5;
-let y = 0;
-if (x !== y) {
-    console.log('Yes');
-}else {
-    console.log('no')
-}
-
-
-
-
-
+// let x = 5;
+// if (x > 0) {
+//     alert('yes');
+//     console.log('yes');
+// }
+// else {
+//     alert('no');
+//     console.log('no')
+// }
 
 
 
-
-// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
-
-
-
+// - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код,
+// який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
-// - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
-// - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+
+const time = 47;
+console.log(time)
+if (time <= 15)
+    console.log('перша чверть')
+else
+if (time <= 30)
+    console.log('друга чверть')
+else
+if (time <= 45)
+    console.log('третя чверть')
+else
+if (time <= 59)
+    console.log('четверта чверть')
+else
+    console.log('Incorrect number time')
+
+
+// - У змінній day дано якесь число від 1 до 31. Потрібно визначити,
+// у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+
+let day = 25;
+console.log(day)
+if (day <= 10)
+    console.log('перша декада')
+else
+if (day <= 20)
+    console.log('друга декада')
+else
+if (day <= 31)
+    console.log('третя декада')
+else
+    console.log('Incorrect number decads')
+
+// - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані
+// відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+
+
+
 //     - Користувач вводить або має два числа.
 //         Потрібно знайти та вивести максимальне число з тих двох .
 //         Також потрібно врахувати коли введені рівні числа.
 //
-//     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
-//         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
-//
-//
-//     - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
+// let x = 5;
+// let y = 7;
+// if (x == y) {
+//    console.log('5');
+// }
+// else {
+//    console.log('7')
+// }
+
+//     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно).
+//     Напишіть код який, за допомоги  оператора || буде присвоювати змінній х значення "default"
+//         якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
+
+// x = undefined;
+// x = x || 'default';
+// console.log(x);
+
+
+//     - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray.
+//     За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша
+//     за 5 місяців вивести в консоль "Супер".
+
+
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
+console.log(coursesAndDurationArray);
+
+let JavaScriptComplex = 5;
+if (JavaScriptComplex > 5) {
+    alert('super');
+    console.log('super')
+}
+else {
+    alert('error');
+    console.log('error')
+}
+
+
+let JavaComplex = 6;
+if (JavaComplex > 5) {
+    alert('super');
+    console.log('super')
+}
+else {
+    alert('error');
+    console.log('error')
+}
+
+
+let PythonComplex = 6;
+if (PythonComplex > 5) {
+    alert('super');
+    console.log('super')
+}
+else {
+    alert('error');
+    console.log('error')
+}
+
+
+
+let QAComplex = 4;
+if (QAComplex > 5) {
+    alert('super');
+    console.log('super')
+}
+else {
+    alert('error');
+    console.log('error')
+}
+
+
+let FullStack = 7;
+if (FullStack > 5) {
+    alert('super');
+    console.log('super')
+}
+else {
+    alert('error');
+    console.log('error')
+}
+
+
+let Frontend = 4;
+if (Frontend > 5) {
+    alert('super');
+    console.log('super')
+}
+else {
+    alert('error');
+    console.log('error')
+}
